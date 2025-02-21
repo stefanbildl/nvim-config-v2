@@ -3,7 +3,7 @@
 Based on the awesome
 [nvim-lua/kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim) project.
 
-Thank you to the 155+ contributors for this great place to
+Thank you to the 154+ contributors for this great place to
 start with your own Neovim config.
 
 This is my configuration that I use everyday at work.

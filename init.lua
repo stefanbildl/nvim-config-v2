@@ -554,12 +554,12 @@ require('lazy').setup({
   },
 
   {
-    'EdenEast/nightfox.nvim',
+    'catppuccin/nvim',
+    name = 'catppuccin',
     priority = 1000,
+    opts = {},
     config = function()
-      ---@diagnostic disable-next-line: missing-fields
-      require('nightfox').setup {}
-      vim.cmd.colorscheme 'nordfox'
+      vim.cmd.colorscheme 'catppuccin'
     end,
   },
 

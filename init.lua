@@ -314,6 +314,7 @@ require('lazy').setup({
       local servers = {
         -- clangd = {},
         gopls = {},
+        golangci_lint_ls = {},
         pyright = {},
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
@@ -321,6 +322,9 @@ require('lazy').setup({
         -- Some languages (like typescript) have entire language plugins that can be useful:
         --    https://github.com/pmizio/typescript-tools.nvim
         --
+        yamlls = {},
+        eslint = {},
+
         -- But for many setups, the LSP (`ts_ls`) will work just fine
         ts_ls = {
           commands = {
@@ -415,7 +419,7 @@ require('lazy').setup({
         end
       end,
       formatters_by_ft = {
-        lua = { 'stylua' },
+        -- lua = { 'stylua' },
         typescript = { 'prettierd' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },

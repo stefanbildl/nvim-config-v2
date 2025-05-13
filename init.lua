@@ -322,7 +322,7 @@ require('lazy').setup({
         -- Some languages (like typescript) have entire language plugins that can be useful:
         --    https://github.com/pmizio/typescript-tools.nvim
         --
-        yamlls = {},
+        -- yamlls = {},
         eslint = {},
 
         -- But for many setups, the LSP (`ts_ls`) will work just fine
@@ -421,6 +421,7 @@ require('lazy').setup({
       formatters_by_ft = {
         -- lua = { 'stylua' },
         typescript = { 'prettierd' },
+        -- yaml = { 'yamlfmt' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --

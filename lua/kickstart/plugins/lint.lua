@@ -12,7 +12,7 @@ return {
           typescript = { 'eslint_d' },
           json = { 'jsonlint' },
           dockerfile = { 'hadolint' },
-          yaml = { 'yamllint' },
+          -- yaml = { 'yamllint' },
         }
 
         -- To allow other plugins to add linters to require('lint').linters_by_ft,

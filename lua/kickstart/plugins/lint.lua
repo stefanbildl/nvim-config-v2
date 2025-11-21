@@ -10,9 +10,9 @@ return {
           markdown = { 'markdownlint' },
           go = { 'golangcilint' },
           typescript = { 'eslint_d' },
-          json = { 'jsonlint' },
-          dockerfile = { 'hadolint' },
-          yaml = { 'yamllint' },
+          -- json = { 'jsonlint' },
+          -- dockerfile = { 'hadolint' },
+          -- yaml = { 'yamllint' },
         }
 
         -- To allow other plugins to add linters to require('lint').linters_by_ft,

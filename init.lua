@@ -554,13 +554,22 @@ require('lazy').setup({
     end,
   },
 
+  -- {
+  --   'catppuccin/nvim',
+  --   name = 'catppuccin',
+  --   priority = 1000,
+  --   opts = {},
+  --   config = function()
+  --     vim.cmd.colorscheme 'catppuccin'
+  --   end,
+  -- },
+
   {
-    'catppuccin/nvim',
-    name = 'catppuccin',
+    'AlexvZyl/nordic.nvim',
+    lazy = false,
     priority = 1000,
-    opts = {},
     config = function()
-      vim.cmd.colorscheme 'catppuccin'
+      require('nordic').load()
     end,
   },
 

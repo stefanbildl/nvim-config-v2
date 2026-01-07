@@ -42,7 +42,7 @@ require('lazy').setup({
   { -- Fuzzy Finder (files, lsp, etc)
     'nvim-telescope/telescope.nvim',
     event = 'VimEnter',
-    branch = '0.1.x',
+    branch = 'master',
     dependencies = {
       'nvim-lua/plenary.nvim',
       {
@@ -322,7 +322,6 @@ require('lazy').setup({
         -- Some languages (like typescript) have entire language plugins that can be useful:
         --    https://github.com/pmizio/typescript-tools.nvim
         --
-        -- yamlls = {},
         eslint = {},
 
         -- But for many setups, the LSP (`ts_ls`) will work just fine
@@ -555,13 +554,22 @@ require('lazy').setup({
     end,
   },
 
+  -- {
+  --   'catppuccin/nvim',
+  --   name = 'catppuccin',
+  --   priority = 1000,
+  --   opts = {},
+  --   config = function()
+  --     vim.cmd.colorscheme 'catppuccin'
+  --   end,
+  -- },
+
   {
-    'catppuccin/nvim',
-    name = 'catppuccin',
+    'AlexvZyl/nordic.nvim',
+    lazy = false,
     priority = 1000,
-    opts = {},
     config = function()
-      vim.cmd.colorscheme 'catppuccin'
+      require('nordic').load()
     end,
   },
 
